@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:900|Montserrat&display=swap');
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.container{
+    /* background: grey; */
+    box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+    width: 50%;
+    margin: auto;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+section.left-section{
+    /* background: transparent; */
+    border: 1px solid hsl(hue, saturation, lightness);
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    text-align: center;
+    padding: 15px;
+    /* background: rgb(20, 50, 220); */
+    
+}
+section.left-section .skill{
+    border: 1px solid transparent;
+    min-height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+    overflow: hidden;
+    
+}
+section.left-section p{
+    color: #3F8DB0;
+    font-family: sans-serif;
+}
+section.left-section .contact{
+    border: 1px solid hsla(0, 0%, 0%, 0.15);
+    min-height: 100px;
+    box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+    overflow: hidden;
+    /* padding: 5px; */
+}
+section.left-section h1{
+    width: 50%;
+    line-height: 1.5;
+    font-family: 'Fira Sans', sans-serif;
+    color: #3F8DB0;
+    letter-spacing: 1.5;
+}
+section.left-section .ml-5,.mr-5{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+section.left-section img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid hsl(0, 6%, 68%); */
+    box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+}
+section.left-section .left-badge{
+    width: 100%;
+    padding: .5em 1em;
+    color: white;
+    background: #3F8DB0;
+    text-align: justify;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+section.right-section{
+    background: #3F8DB0;
+    padding: 15px;
+    color: white;
+}
+section.right-section p,i{
+    font-family: 'Montserrat', sans-serif;
+}
+section .right-badge{
+    /* background: red; */
+    padding: 10px;
+    box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+}
+section .font-bold{
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
