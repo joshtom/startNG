@@ -54,11 +54,17 @@ for (const fields in fieldArray) {
 
 getFormData.btnSubmit.addEventListener('click', (event) => {
 	event.preventDefault();
-	if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(getFormData.email.value)) {
+	
+		if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(getFormData.email.value)) {
 		spanMsg.textContent="Please check your email you have entered an incorrect one";
 	} else {
-		alert("Success");
+		spanMsg.textContent="Thanks for contacting me, i will get back to you as soon as possible";
+		for(const fields in fieldArray) {
+			fieldArray[fields].value = "";
+		}
 	}
+	
+	
 })
 
 
