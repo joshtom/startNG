@@ -59,22 +59,33 @@
         </div>
           <div class="contact-me">
             <h1>Get in Touch</h1>
-            <h2 class="message"></h2>
-            <form action="">
-
+            <div class="d-flex">   
+            <h2 class="message" style="text-align: center;"></h2>
+            <form action="" style="display: flex; flex-flow: column wrap; justify-content: center;">
+                    <div class="i-group">
             <label for="name">Name</label>
             <input type="text" placeholder="Enter your name" id="name" required="" >
+            </div>
+
+            <div class="i-group">
              <label for="email">Email</label>
-            <input type="email" placeholder="Enter your email" id="email" required="">
-             <label for="phone">Phone Number</label>
-            <input type="number" placeholder="Enter your name" id="phone" required="">
+                        <input type="email" placeholder="Enter your email" id="email" required="">
+            </div>
+            <div class="i-group">
+                     <label for="phone">Phone Number</label>
+                                <input type="number" placeholder="Enter your name" id="phone" required="">
+            </div>
+            <div class="i-group">
              <label for="msg">Your Message</label>
-            <textarea placeholder="Enter your message here" id="msg" required="">
-            </textarea>
-                <button type="submit" id="btn-submit">SEND</button>
+                        <textarea placeholder="Enter your message here" id="msg" required="">
+                        </textarea>
+                        <button type="submit" id="btn-submit">SEND</button>
+            </div>
+            
+                
                 </form>
                 
-            </textarea>
+            </div>
         </div>
       
 

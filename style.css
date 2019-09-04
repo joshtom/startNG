@@ -149,3 +149,13 @@ section .font-bold{
 .success{
     color: green !important
 }
+.d-flex{
+    background: rgba(0,0,0,.4);
+    display: flex;
+    flex-flow: column wrap; 
+    align-self: center;
+
+}
+.d-flex .i-group{
+    margin: auto;
+}
