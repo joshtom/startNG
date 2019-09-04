@@ -98,3 +98,36 @@ section .font-bold{
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
 }
+.contact-me{
+    margin-bottom: -100px;
+    width: 50%;
+    min-height: 400px;
+    background-color: #3F8DB0;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+}
+.contact-me h1{
+    text-align: center;
+    color: #fff;
+}
+.contact-me input,textarea,button{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    width: 250px;
+    height: auto;
+}
+.contact-me input{
+    padding: 10px;
+}
+.contact-me textarea{
+    height: 100px;
+}
+.contact-me button{
+    padding: 10px;
+    background-color: #3F8DB0;
+    box-shadow: 0 2px 0px 5px rgba(0,0,0,.6);
+    cursor: pointer;
+}
