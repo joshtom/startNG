@@ -1,4 +1,3 @@
-
 const name = document.querySelector("#name");
 const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
@@ -58,10 +57,28 @@ getFormData.btnSubmit.addEventListener('click', (event) => {
 		if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(getFormData.email.value)) {
 		spanMsg.textContent="Please check your email you have entered an incorrect one";
 	} else {
-		spanMsg.textContent="Thanks for contacting me, i will get back to you as soon as possible";
-		for(const fields in fieldArray) {
+	getFormData.btnSubmit.disabled = true; //Disable the button to avoid multiple submission
+	const ajaxForm = new FormData();
+	ajaxForm.append( "name", getFormData.name.value );
+	ajaxForm.append( "email", getFormData.email.value );
+	ajaxForm.append( "msg", getFormData.msg.value );
+
+	// Calling the ajax method
+	const ajax = new XMLHttpRequest();
+	 ajax.open( "POST", "parser.php" );
+    ajax.onreadystatechange = () => {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+            spanMsg.innerHTML = "<p class='text-muted text-center'> Thanks " + getFormData.name.value + ", Your message has been sent. </p>";
+           	for(const fields in fieldArray) {
 			fieldArray[fields].value = "";
 		}
+        } else {
+            spanMsg.innerHTML = ajax.responseText;
+            getFormData.btnSubmit.disabled = false;
+        }
+    }
+    ajax.send( ajaxForm ); //Sending the actual data
+	
 	}
 	
 	

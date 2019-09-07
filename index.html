@@ -61,23 +61,23 @@
             <h1>Get in Touch</h1>
             <div class="d-flex">   
             <h2 class="message" style="text-align: center;"></h2>
-            <form action="" style="display: flex; flex-flow: column wrap; justify-content: center;">
+            <form id="myContactForm" onsubmit="submitForm(e); return false;" style="display: flex; flex-flow: column wrap; justify-content: center;">
                     <div class="i-group">
             <label for="name">Name</label>
-            <input type="text" placeholder="Enter your name" id="name" required="" >
+            <input type="text" placeholder="Enter your name" id="name" name="name" required="" >
             </div>
 
             <div class="i-group">
              <label for="email">Email</label>
-                        <input type="email" placeholder="Enter your email" id="email" required="">
+                        <input type="email" placeholder="Enter your email" id="email" name="email" required="">
             </div>
             <div class="i-group">
                      <label for="phone">Phone Number</label>
-                                <input type="number" placeholder="Enter your name" id="phone" required="">
+                                <input type="number" placeholder="Enter your name" id="phone" name="phone" required="">
             </div>
             <div class="i-group">
              <label for="msg">Your Message</label>
-                        <textarea placeholder="Enter your message here" id="msg" required="">
+                        <textarea placeholder="Enter your message here" id="msg" name="msg" required="">
                         </textarea>
                         <button type="submit" id="btn-submit">SEND</button>
             </div>
